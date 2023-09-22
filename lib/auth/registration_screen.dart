@@ -156,7 +156,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           onTap: () {
                             auth.signInWithGoogle(context);
                           },
-                          child: Container(
+                          child: SizedBox(
                               height: 50,
                               child: Image.asset('assets/Images/google.png')),
                         ),

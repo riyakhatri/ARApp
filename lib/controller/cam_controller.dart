@@ -5,7 +5,6 @@ import 'package:permission_handler/permission_handler.dart';
 class ScanController extends GetxController {
   @override
   void onInit() {
-    // TODO: implement onInit
     super.onInit();
     initCamera();
   }
@@ -38,4 +37,6 @@ class ScanController extends GetxController {
       print("Permission denied");
     }
   }
+
+  void initializeCamera() {}
 }

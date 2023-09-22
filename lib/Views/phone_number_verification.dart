@@ -155,6 +155,7 @@ class _PhoneNumberVerificationState extends State<PhoneNumberVerification> {
   void _verifyCode() async {
     setState(() {});
     responsiveButtonState.currentState!.setProgressState();
+
     await FirebaseAuth.instance.signInWithCredential(
         PhoneAuthProvider.credential(
             verificationId: widget.verificationId, smsCode: _smsCode));

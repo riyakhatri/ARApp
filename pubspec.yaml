@@ -33,16 +33,21 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_auth: ^4.7.0
   firebase_core: ^2.15.0
+  firebase_storage: ^11.2.5
   flutter:
     sdk: flutter
   get: ^4.6.5
+ 
+  
   google_mlkit_text_recognition: ^0.9.0
   google_sign_in: ^6.1.4
+  image_picker: ^1.0.2
   mobile_scanner: ^3.3.0
   model_viewer_plus: ^1.6.1
   permission_handler: ^10.4.1
-  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
   sizer: ^2.0.15
+  url_launcher: ^6.1.12
 
 dev_dependencies:
   flutter_lints: ^2.0.0

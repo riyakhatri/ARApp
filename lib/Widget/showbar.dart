@@ -9,7 +9,7 @@ class ShowBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 520,
       child: Column(
         children: [
@@ -41,6 +41,15 @@ class ShowBar extends StatelessWidget {
                     leading: const Icon(Icons.shopping_cart),
                     onTap: () => Get.to(() => const ViewScreen(
                           src: 'assets/3DModel/brain_project.glb',
+                        )),
+                  ),
+                  ListTile(
+                    title: const Text('Astronaut'),
+                    subtitle: const Text('Card Subtitle'),
+                    leading: const Icon(Icons.shopping_cart),
+                    onTap: () => Get.to(() => const ViewScreen(
+                          src:
+                              'https://modelviewer.dev/shared-assets/models/Astronaut.glb',
                         )),
                   ),
                   ListTile(

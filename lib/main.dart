@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Camera App',
         home: user == null ? const LoginScreen() : const MainPage(),
+        // home: MainPage(),
       );
     }));
   }
