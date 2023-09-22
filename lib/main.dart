@@ -1,5 +1,7 @@
+import 'dart:io';
+
 import 'package:cam/auth/login_screen.dart';
-import 'package:cam/firebase_options.dart';
+import 'firebase_options.dart';
 import 'package:cam/screens/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -10,9 +12,14 @@ import 'package:sizer/sizer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  Platform.isAndroid
+      ? await Firebase.initializeApp(
+          options: const FirebaseOptions(
+              apiKey: "AIzaSyAtBAwiJepuN1vYGZkxLnFdThXgzL1_MYk",
+              appId: "1:948681925565:android:10ca93d54b1cd1050d28d4",
+              messagingSenderId: "948681925565",
+              projectId: "sem7-c0462"))
+      : await Firebase.initializeApp();
   // Obtain a list of the available cameras on the device.
   runApp(const MyApp());
 }

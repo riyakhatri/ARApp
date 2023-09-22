@@ -182,12 +182,12 @@ class _TextRecoState extends State<TextReco> {
                     ),
                     FloatingActionButton(
                       onPressed: _scanImage,
-                      child: Text("hello"),
+                      child: const Text("hello"),
                     )
                   ],
                 )
               : Container(
-                  child: Text("Loading"),
+                  child: const Text("Loading"),
                 );
         },
       ),

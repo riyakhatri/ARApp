@@ -32,7 +32,7 @@ dependencies:
   cloud_firestore: ^4.8.3
   cupertino_icons: ^1.0.2
   firebase_auth: ^4.7.0
-  firebase_core: ^2.15.0
+  firebase_core: ^2.16.0
   firebase_storage: ^11.2.5
   flutter:
     sdk: flutter
